@@ -8127,7 +8127,7 @@ threadfunc ListenerWorker(void *Dummy){
 								sprintf(arr2[2], "M=%s", user->Username);
 								sprintf(arr2[3], "F=");
 								sprintf(arr2[4], "A=%s", user->IP);
-								sprintf(arr2[5], "S=");
+								sprintf(arr2[5], "S=%s", GetPlayerStat(user->Personas[user->SelectedPerson]));
 								sprintf(arr2[6], "X=%s", user->car);
 								sprintf(arr2[7], "R=%s", rom->Name);
 								sprintf(arr2[8], "RI=%u", rom->ID);
